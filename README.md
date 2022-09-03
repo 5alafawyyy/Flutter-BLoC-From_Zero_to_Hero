@@ -1,16 +1,19 @@
-# bloc_from_zero_to_hero
+# Flutter Application using BLoC
+A BLoC pattern is design pattern created by Google to seperate the UI from Business logic.
 
-A new Flutter project.
+## BLoC {Business Locgic Component}
 
-## Getting Started
+### Why BLoC?
+* BLoC as Design Pattern and StateManagement
+* Knowing the STATE of app is CRUCIAL
+* Presentation Layer & Logic behind it
 
-This project is a starting point for a Flutter application.
+### Advantages of using BLoC?
+* Understand easily what's happening inside the app
+* More structured code, easier to maintain and test
+* Know & understand every state of the app
+* Work on a single, stable, popular and effective BLoC codebase
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p float='left'>
+    <img src='screenshots/bloc.jpg' width='100%'>
+</p>
