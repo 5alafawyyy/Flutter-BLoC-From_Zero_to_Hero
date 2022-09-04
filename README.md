@@ -17,3 +17,8 @@ A BLoC pattern is design pattern created by Google to seperate the UI from Busin
 <p float='left'>
     <img src='screenshots/bloc.jpg' width='100%'>
 </p>
+
+## The main Differnt between BLoC Widgets
+<p float='left'>
+    <img src='screenshots/note.jpg' width='100%'>
+</p>
