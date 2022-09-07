@@ -1,16 +1,15 @@
 import 'package:bloc_from_zero_to_hero/logic/cubit/counter_cubit.dart';
-import 'package:bloc_from_zero_to_hero/presentation/screens/second_counter_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-class CounterScreen extends StatelessWidget {
-  const CounterScreen({super.key});
+class ThirdCounterScreen extends StatelessWidget {
+  const ThirdCounterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Counter'),
+        title: const Text('Third Counter'),
         centerTitle: true,
       ),
       body: Center(
@@ -56,7 +55,7 @@ class CounterScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FloatingActionButton(
-                  heroTag: '1',
+                  heroTag: '5',
                   onPressed: () {
                     BlocProvider.of<CounterCubit>(context).decremet();
                   },
@@ -66,7 +65,7 @@ class CounterScreen extends StatelessWidget {
                   ),
                 ),
                 FloatingActionButton(
-                  heroTag: '2',
+                  heroTag: '6',
                   onPressed: () {
                     BlocProvider.of<CounterCubit>(context).incremet();
                   },
@@ -80,12 +79,12 @@ class CounterScreen extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).pushNamed('counter2');
+                Navigator.pop(context);
               },
               color: Colors.blueGrey,
               textColor: Colors.white,
               child: const Text(
-                'Second Screen',
+                'GET BACK',
               ),
             ),
           ],

@@ -55,6 +55,7 @@ class SecondCounterScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 FloatingActionButton(
+                  heroTag: '3',
                   onPressed: () {
                     BlocProvider.of<CounterCubit>(context).decremet();
                   },
@@ -64,6 +65,7 @@ class SecondCounterScreen extends StatelessWidget {
                   ),
                 ),
                 FloatingActionButton(
+                  heroTag: '4',
                   onPressed: () {
                     BlocProvider.of<CounterCubit>(context).incremet();
                   },
@@ -76,11 +78,13 @@ class SecondCounterScreen extends StatelessWidget {
               height: 40.0,
             ),
             MaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('counter3');
+              },
               color: Colors.blueGrey,
               textColor: Colors.white,
               child: const Text(
-                'Second Screen',
+                'Third Screen',
               ),
             ),
           ],

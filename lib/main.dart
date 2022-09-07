@@ -1,14 +1,15 @@
 import 'package:bloc_from_zero_to_hero/logic/cubit/counter_cubit.dart';
-import 'package:bloc_from_zero_to_hero/presentation/screens/counter_screen.dart';
+import 'package:bloc_from_zero_to_hero/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  final AppRouter _appRouter = AppRouter();
+   MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blueGrey,
         ),
-        home: const CounterScreen(),
+        onGenerateRoute: _appRouter.onGenerateRoute,
+        
       ),
     );
   }
