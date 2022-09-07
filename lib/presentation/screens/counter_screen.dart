@@ -1,4 +1,5 @@
-import 'package:bloc_from_zero_to_hero/cubit/counter_cubit.dart';
+import 'package:bloc_from_zero_to_hero/logic/cubit/counter_cubit.dart';
+import 'package:bloc_from_zero_to_hero/presentation/screens/second_counter_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -71,6 +72,24 @@ class CounterScreen extends StatelessWidget {
                   child: const Icon(Icons.add),
                 ),
               ],
+            ),
+            const SizedBox(
+              height: 40.0,
+            ),
+            MaterialButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: ((context) => const SecondCounterScreen()),
+                  ),
+                );
+              },
+              color: Colors.blueGrey,
+              textColor: Colors.white,
+              child: const Text(
+                'Second Screen',
+              ),
             ),
           ],
         ),
