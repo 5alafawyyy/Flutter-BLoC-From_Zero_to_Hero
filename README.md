@@ -72,31 +72,25 @@ A BLoC pattern is design pattern created by Google to seperate the UI from Busin
 </table>
 
 
-<ul>
-    <li>
-        <dev>
-            <p style= "font-weight:bold">You can NAVIGATE inside Flutter by using</p>
-            <ol type="I">
-                <li>Anonymous Routing (recmmended for SMALL projects)</li>
-                <li>Named Routing (recmmended for MEDIUM projects)</li>
-                <li>Generated Routing (recmmended for LARGE projects)</li> 
-            </ol>
-        </dev>
-    </li>
-    <li>The key is to provide a UNIQUE INSTANCE of a bloc/cubit.</li>
-    <li>You SHOULDONT create MULTIPLE INSTANCES of the same bloc/cubit.</li>
-    <li>BlocProvider() CREATES & PROVIDES a NEW INSTANCE of a bloc/cubit.</li>
-    <li>BlocProvider.value() takes an ALREADY CREATED INSTANCE and then PROVIDES it further.</li>
-    <li>
-     <dev>
-            <p style= "font-weight:bold">You can PROVIDE your cubit/bloc INSTANCES</p>
-            <ol type="I">
-                <li>LOCALLY-when you want to provide the instance to A SINGLE SCREEN</li>
-                <li>SPECIFICALLY-when you want to SPECIFICALLY PROVIDE the instance across one or more SCREENS</li>
-                <li>GLOBALLY-when you want to provide the instance ACROSS ALL OF YOUR SCREENS</li> 
-            </ol>
-        </dev>
-    </li>
-</ul>
+## NOTES
+* You can NAVIGATE inside Flutter by using</p>
+  <ol>
+      <li>Anonymous Routing (recmmended for SMALL projects)</li>
+      <li>Named Routing (recmmended for MEDIUM projects)</li>
+      <li>Generated Routing (recmmended for LARGE projects)</li> 
+  </ol>
+
+
+* The key is to provide a UNIQUE INSTANCE of a bloc/cubit.
+* You SHOULDONT create MULTIPLE INSTANCES of the same bloc/cubit.
+* BlocProvider() CREATES & PROVIDES a NEW INSTANCE of a bloc/cubit.
+* BlocProvider.value() takes an ALREADY CREATED INSTANCE and then PROVIDES it further.
+* You can PROVIDE your cubit/bloc INSTANCES
+  <ol>
+      <li>LOCALLY-when you want to provide the instance to A SINGLE SCREEN</li>
+      <li>SPECIFICALLY-when you want to SPECIFICALLY PROVIDE the instance across one or more SCREENS</li>
+      <li>GLOBALLY-when you want to provide the instance ACROSS ALL OF YOUR SCREENS</li> 
+  </ol>
+
 
 
