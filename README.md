@@ -73,24 +73,24 @@ A BLoC pattern is design pattern created by Google to seperate the UI from Busin
 
 
 ## NOTES
-* You can NAVIGATE inside Flutter by using</p>
-  <ol>
-      <li>Anonymous Routing (recmmended for SMALL projects)</li>
-      <li>Named Routing (recmmended for MEDIUM projects)</li>
-      <li>Generated Routing (recmmended for LARGE projects)</li> 
-  </ol>
-
+* You can NAVIGATE inside Flutter by using
+  - Anonymous Routing (recmmended for SMALL projects)
+  - Named Routing (recmmended for MEDIUM projects)
+  - Generated Routing (recmmended for LARGE projects)
 
 * The key is to provide a UNIQUE INSTANCE of a bloc/cubit.
+
 * You SHOULDONT create MULTIPLE INSTANCES of the same bloc/cubit.
+
 * BlocProvider() CREATES & PROVIDES a NEW INSTANCE of a bloc/cubit.
+
 * BlocProvider.value() takes an ALREADY CREATED INSTANCE and then PROVIDES it further.
+
 * You can PROVIDE your cubit/bloc INSTANCES
-  <ol>
-      <li>LOCALLY-when you want to provide the instance to A SINGLE SCREEN</li>
-      <li>SPECIFICALLY-when you want to SPECIFICALLY PROVIDE the instance across one or more SCREENS</li>
-      <li>GLOBALLY-when you want to provide the instance ACROSS ALL OF YOUR SCREENS</li> 
-  </ol>
+  - LOCALLY-when you want to provide the instance to A SINGLE SCREEN
+  - SPECIFICALLY-when you want to SPECIFICALLY PROVIDE the instance across one or more SCREENS
+  - GLOBALLY-when you want to provide the instance ACROSS ALL OF YOUR SCREENS
+
 
 
 
